@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-image: url("../img/fondo-planes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    flex-grow: 1;
+    margin-top: 60px;
+}
+
+p {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.plans {
+    text-align: center;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.plans h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
+
+}
+
+
+.plan {
+    background: #2c6da9;
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(242, 240, 240, 0.4);
+    transition: transform 0.3s;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+}
+
+.plan h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.subtitles {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.plan ul li {
+    margin: 8px 0;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.plan:hover{
+    background-color: #c465ef;
+}
+.price {
+    font-size: 30px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #bbb;
+}
+
+button {
+    border: 1px solid #b854e6;
+    background-color: #9247cb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+
+}
+
+button:hover {
+    background-color: rgb(43, 206, 221);
+    border: 1px solid rgb(163, 191, 255);
+}
