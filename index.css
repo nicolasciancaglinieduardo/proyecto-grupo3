@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body {
+    background: linear-gradient(282deg, rgba(86, 130, 232, 1) 0%, rgba(204, 92, 255, 1) 100%);
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    padding: 0 20px;
+}
+
+.iniciar-sesion {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px;
+    padding: 6px 12px;
+    background-color: rgb(46, 46, 46);
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.iniciar-sesion:hover {
+    color: black;
+    background-color: rgba(197, 197, 197, 0.349);
+}
+
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.logo-ada {
+    width: 500px;
+    max-width: 90%;
+    margin-top: -100px;
+    margin-bottom: -120px;
+    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.568));
+}
+
+
+.h1-principal {
+    color: rgb(0, 0, 0);
+    margin: 0px 0 0px 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    font-size: 2.5rem;
+}
+
+section > p {
+    font-size: 1.5rem;
+    font-weight:600;
+    color: #f1f1f1;
+    margin: 20px 0 10px 20px;
+    background: linear-gradient(90deg, #f1f1f1, #ffefef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.div-aside{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    padding-right: 370px;
+    padding-top: 10px;
+    }
+
+.aside-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 13px;
+}
+
+.img-aside{
+    max-width: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.img-aside:hover{
+    transform: scale(1.15);
+}
+
+.desde {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 400;
+    margin: 0 0 20px 20px;
+    background: linear-gradient(90deg, #f1f1f1, #ffefef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+section > a {
+    color: white;
+    border: 1px solid #d885ff;
+    background-color: #5682E8;
+    width: 160px;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 6px;
+    padding: 10px;
+    margin: 18px 0 0 20px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.mejor-plan:hover {
+    background-color: rgb(88, 138, 255);
+    border: 1px solid rgb(163, 191, 255);
+}
+
+
+.flex-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.img-aside:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 992px) {
+    .principal {
+        align-items: center;
+        text-align: center;
+    }
+
+    section > h1,
+    section > p,
+    .desde,
+    section > a {
+        margin-left: 0;
+    }
+
+    .flex-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .logo-ada {
+        width: 400px;
+        margin-bottom: -30px;
+    }
+
+    section > h1 {
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+    }
+
+    section > p {
+        font-size: 1.2rem;
+    }
+
+    .desde {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .logo-ada {
+        width: 250px;
+        margin-bottom: -20px;
+    }
+
+    section > h1 {
+        font-size: 1.5rem;
+    }
+
+    section > p {
+        font-size: 1rem;
+    }
+
+    .desde {
+        font-size: 0.9rem;
+    }
+
+    section > a {
+        width: 140px;
+        font-size: 0.9rem;
+        padding: 8px;
+        margin-bottom: -250px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .principal {
+        align-items: center;
+        text-align: center;
+    }
+
+    section > h1,
+    section > p,
+    .desde,
+    section > a {
+        margin-left: 0;
+    }
+
+    .flex-div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-ada {
+        width: 500px;
+        margin-bottom: -40px;
+    }
+
+    section > h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    section > p {
+        font-size: 1.3rem;
+    }
+
+    .desde {
+        font-size: 1.1rem;
+    }
+
+    section > a {
+        width: 150px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    .div-aside {
+    grid-template-columns: 1fr; /* aside arriba */
+    }
+
+    .aside-img {
+    grid-template-columns: repeat(2, minmax(120px, 1fr));
+    justify-content: center;
+    gap: 30px;
+    }
+
+    .img-aside {
+    max-width: 140px;
+    margin-left: 50px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .div-aside {
+    grid-template-columns: 150px 1fr; /* aside más chico */
+    }
+
+    .aside-img {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+
+    .img-aside {
+    max-width: 160px;
+    padding-left: 50px;
+    }
+}
+
+
+@media (min-width: 901px) {
+    .div-aside {
+    grid-template-columns: 220px 1fr;
+    }
+
+    .aside-img {
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    }
+}
