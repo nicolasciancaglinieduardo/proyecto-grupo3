@@ -61,7 +61,6 @@ p {
 .plans h1 {
     font-size: 28px;
     margin-bottom: 40px;
-
 }
 
 
@@ -119,8 +118,8 @@ p {
 }
 
 button {
-    border: 1px solid #b854e6;
-    background-color: #9247cb;
+    border: 1px solid #7428f8;
+    background-color: #9645ed;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -134,4 +133,8 @@ button {
 button:hover {
     background-color: rgb(43, 206, 221);
     border: 1px solid rgb(163, 191, 255);
+}
+
+button a {
+    color: white;
 }
