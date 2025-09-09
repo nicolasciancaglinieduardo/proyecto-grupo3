@@ -6,13 +6,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-celeste: #5682e8ff;
+    --color-violeta: #cc5cff;
+    --color-negro: #000000;
+    --color-gris: #222;
+    --color-blanco: #d1cece;
+}
+
 body {
-    font-family: "Mozilla Headline", sans-serif;
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     font-variation-settings:
         "wdth" 106.4;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container-footer {
@@ -21,7 +29,7 @@ body {
 }
 
 .footer {
-    background-color: #24262b;
+    background-color: var(--color-gris);
     padding: 80px 0;
 }
 
@@ -41,10 +49,10 @@ body {
 
 .footer-links h4 {
     font-size: 15px;
-    color: #ffffff;
+    color: var(--color-blanco);
     margin-bottom: 20px;
     font-weight: 500;
-    border-bottom: 2px solid #5682E8FF;
+    border-bottom: 2px solid var(--color-celeste);
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -52,7 +60,7 @@ body {
 .footer-links ul li a {
     font-size: 14px;
     text-decoration: none;
-    color: #bbbbbb;
+    color: var(--color-blanco);
     display: block;
     margin-bottom: 15px;
     transition: all .3s ease;
@@ -72,12 +80,12 @@ body {
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: var(--color-blanco);
     transition: all .5s ease;
 }
 
 .social-link a:hover {
-    background-color: #CC5CFF;
+    background-color: var(--color-violeta);
 }
 
 .footer-logo {
@@ -90,17 +98,31 @@ body {
 
 .footer-logo img {
     filter: drop-shadow(2px 2px 1px rgba(255, 255, 255, 0.568));
-    height: 200px;
+    height: 50px;
     transition: all .5s ease;
 }
 
-@media(max-width:991px) {
-    .footer-row {
-        text-align: center;
-    }
+@media (max-width: 600px) {
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .footer-links {
+    .footer-links{
         width: 100%;
         margin-bottom: 30px;
     }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .footer-links {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 901px) {
+  .footer-links {
+    width: 25%;
+  }
 }
