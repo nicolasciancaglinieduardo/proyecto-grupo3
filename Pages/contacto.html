@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contacto - ADA </h1>
+    </header>
+
+    <section class="contact">
+        <div class="info-contact">
+            <h2>¿Tienes alguna duda? ¡Contáctanos!</h2>
+            <p>En ADA, nos importa tu experiencia. Si tienes preguntas, sugerencias o necesitas ayuda, no dudes en
+                escribirnos.</p>
+
+            <ul>
+                <li><strong>Dirección:</strong> Gral. José María Paz 574, San Miguel de Tucumán</li>
+                <li><strong>Email:</strong> contacto@ada-streaming.com</li>
+            </ul>
+        </div>
+
+        <div class="card-form">
+            <form>
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Nombre">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Ingrese un correo electrónico válido (ejemplo@correo.com)">
+
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Ej: 3812345678" pattern="[0-9]{7,15}">
+
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required
+                    placeholder="Escribe tu mensaje aqui"></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ADA Streaming. Todos los derechos reservados.</p>
+        <a href="../index.html">Inicio</a> |
+    </footer>
+</body>
+
+</html>

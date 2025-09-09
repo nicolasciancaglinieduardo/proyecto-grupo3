@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mozilla+Headline:wdth,wght@106.4,200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-celeste: #5682e8ff;
+    --color-violeta: #cc5cff;
+    --color-negro: #000000;
+    --color-gris: #222;
+    --color-blanco: #d1cece;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-blanco);
+    color: var(--color-gris);
+}
+
+header {
+    background-color: var(--color-negro);
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    color: var(--color-celeste);
+}
+
+h2{
+    margin: 0 0 10px 0;
+    color: var(--color-celeste);
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.info-contact,
+.card-form {
+    flex: 1 1 300px;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid var(--color-gris);
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: var(--color-celeste);
+    color: var(--color-blanco);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-violeta);
+}
+
+footer {
+    background-color: var(--color-gris);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: var(--color-blanco);
+}
