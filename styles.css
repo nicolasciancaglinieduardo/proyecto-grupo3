@@ -7,12 +7,12 @@
 }
 
 body {
-  font-family: "Mozilla Headline", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 106.4;
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 106.4;
 }
 
 .container-footer {
@@ -49,7 +49,7 @@ body {
     display: inline-block;
 }
 
-.footer-links  ul li a {
+.footer-links ul li a {
     font-size: 14px;
     text-decoration: none;
     color: #bbbbbb;
@@ -99,7 +99,7 @@ body {
         text-align: center;
     }
 
-    .footer-links{
+    .footer-links {
         width: 100%;
         margin-bottom: 30px;
     }
