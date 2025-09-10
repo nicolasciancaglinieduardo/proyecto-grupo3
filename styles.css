@@ -18,9 +18,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
-    font-variation-settings:
-        "wdth" 106.4;
-  font-family: "Montserrat", sans-serif;
+    font-variation-settings:"wdth" 106.4;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container-footer {
@@ -103,26 +102,26 @@ body {
 }
 
 @media (max-width: 600px) {
-  .footer-row {
-    flex-direction: column;
-    text-align: center;
-  }
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
 
-    .footer-links{
+    .footer-links {
         width: 100%;
         margin-bottom: 30px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  .footer-links {
-    width: 50%;
-  }
+    .footer-links {
+        width: 50%;
+    }
 }
 
 
 @media (min-width: 901px) {
-  .footer-links {
-    width: 25%;
-  }
+    .footer-links {
+        width: 25%;
+    }
 }
