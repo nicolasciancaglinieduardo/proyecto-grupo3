@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contacto - ADA </h1>
+    </header>
+
+    <section class="contact">
+        <div class="info-contact">
+            <h2>¿Tienes alguna duda? ¡Contáctanos!</h2>
+            <p>En ADA, nos importa tu experiencia. Si tienes preguntas, sugerencias o necesitas ayuda, no dudes en
+                escribirnos.</p>
+
+            <ul>
+                <li><strong>Dirección:</strong> Gral. José María Paz 574, San Miguel de Tucumán</li>
+                <li><strong>Email:</strong> contacto@ada-streaming.com</li>
+            </ul>
+        </div>
+
+        <div class="card-form">
+            <form>
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Nombre">
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    title="Ingrese un correo electrónico válido (ejemplo@correo.com)">
+
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Ej: 3812345678" pattern="[0-9]{7,15}">
+
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required
+                    placeholder="Escribe tu mensaje aqui"></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <footer class="footer">
+            <div class="container-footer">
+                <div class="footer-row">
+
+                    <div class="footer-links">
+                        <h4>Más información</h4>
+                        <ul>
+                            <li><a href="./pages/contacto.html">Contacto</a></li>
+                            <li><a href="./pages/nosotros.html">Acerca de nosotros</a></li>
+                            <li><a href="">Politica de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Ayuda</h4>
+                        <ul>
+                            <li><a href="">Centro de ayuda</a></li>
+                            <li><a href="">Dispositivos compatibles</a></li>
+                            <li><a href="">Envíanos tus comentarios</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Siguenos</h4>
+                        <div class="social-link">
+                            <a href=""><i class="bi bi-twitter-x"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-tiktok"></i></a>
+                            <a href=""><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </footer>
+</body>
+
+</html>
