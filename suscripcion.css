@@ -137,10 +137,14 @@ input:focus {
 }
 
 .form button:hover {
-    background-color: rgb(88, 138, 255);
+    background-color: rgb(49, 101, 206);
     border: 1px solid rgb(163, 191, 255);
 }
 
+button a {
+    color: white;
+    text-decoration: none;
+}
 .form .footer {
     text-align: center;
     font-size: 14px;
@@ -149,8 +153,7 @@ input:focus {
 
 
 .form .footer a {
-    color: #007BFF;
-    text-decoration: none;
+    color: #3d7cbf;
 }
 
 @media (max-width: 768px) {
