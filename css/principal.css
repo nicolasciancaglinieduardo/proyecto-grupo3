@@ -55,21 +55,21 @@ body {
     font-weight: bolder;
 }
 
-.recomendaciones {
+.recommendations {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
 }
 
-.categorias {
+.logos {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 30px 20px;
 }
 
-.categorias .card {
+.logos .card {
     background: #1c1c1c;
     padding: 15px;
     border-radius: 12px;
@@ -84,13 +84,13 @@ body {
 
 }
 
-.categorias .card img {
+.logos .card img {
     max-width: 120%;
     max-height: 120%;
     object-fit: contain;
 }
 
-.categorias .card:hover {
+.logos .card:hover {
     transform: scale(1.1);
 }
 
@@ -124,19 +124,9 @@ body {
     gap: 2px;
 }
 
-.card-info h3 {
-    font-size: 0.75rem;
-    font-weight: 400;
-    opacity: 0.85;
+.card-info {
     margin: 0;
-    line-height: 1.1;
-}
-
-.card-info h2 {
-    font-size: 1rem;
-    font-weight: bold;
-    margin:0;
-    line-height: 1.1;
+    font-size: 18px;
 }
 
 .card-info p {
@@ -211,24 +201,7 @@ h2 {
     border-radius: 8px;
 }
 
-.info {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-}
 
-.info h3 {
-    margin: 0;
-    font-size: 18px;
-}
-
-.info p {
-    margin: 2px 0 0;
-    font-size: 12px;
-    color: #bbb;
-}
 
 .sports-section {
     padding: 60px 40px 40px;
@@ -307,4 +280,149 @@ h2 {
 .card:hover {
     transform: scale(1.05);
 
+}
+
+.categories {
+    padding: 20px;
+}
+
+.categories h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: #f3eded;
+    border-left: 4px solid red;
+    padding-left: 10px;
+}
+
+.categories .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.categories .card {
+    background: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.categories .card img {
+    width: 100%;
+    display: block;
+}
+
+.categories .card p {
+    margin: 10px;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.categories .card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 1200px) {
+    .banner {
+        height: 60vh;
+        padding: 20px;
+    }
+
+    .banner-texto {
+        max-width: 60%;
+        padding-top: 100px;
+    }
+
+    .banner-texto h1 {
+        font-size: 40px;
+    }
+
+    .banner-texto p {
+        font-size: 18px;
+    }
+
+    .image-content {
+        gap: 30px;
+    }
+
+    .card img {
+        height: 260px;
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .banner-texto {
+        max-width: 100%;
+        padding-top: 60px;
+    }
+
+    .banner-texto h1 {
+        font-size: 32px;
+    }
+
+    .sports-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-content {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 200px;
+    }
+
+    .card img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .banner {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .banner-texto {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .banner-texto h1 {
+        font-size: 26px;
+    }
+
+    .banner-texto p {
+        font-size: 16px;
+    }
+
+    .recomendaciones {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+
+    .categorias {
+        flex-wrap: wrap;
+    }
+
+    .categorias .card {
+        width: 160px;
+        height: 120px;
+    }
+
+    .image-content .logo {
+        height: 60px;
+    }
 }
