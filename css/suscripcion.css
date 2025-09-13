@@ -25,23 +25,25 @@ body {
 }
 
 .logo-container {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .logo {
-    width: 200px;
-    height: auto;
+    display: block;
+    margin: 100px auto 30px;
+    width: 140px;
     filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.568));
-    max-width: 80%;
+    
 }
 
 .form-container {
     background: white;
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 0 auto;
+    margin-top: -140px;
 }
 
 .form-container h1 {

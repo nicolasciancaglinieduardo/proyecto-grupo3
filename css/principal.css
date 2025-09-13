@@ -284,6 +284,7 @@ h2 {
 
 .categories {
     padding: 20px;
+    gap: 20px;
 }
 
 .categories h2 {
@@ -306,11 +307,16 @@ h2 {
     overflow: hidden;
     text-align: center;
     transition: transform 0.3s ease;
+    min-width: 320px;
+    max-width: 320px;
+    margin-right: 20px;
+    flex: 0 0 auto;
 }
 
 .categories .card img {
     width: 100%;
-    display: block;
+    height: 180px;
+    object-fit: cover;
 }
 
 .categories .card p {
