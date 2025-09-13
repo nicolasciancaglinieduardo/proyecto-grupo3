@@ -9,7 +9,7 @@
 body{
     background-image: 
     linear-gradient(to top right, rgba(0,0,0,100), rgba(0,0,0,0)),
-    url(img-series/wandavision.jpeg);
+    url(../img/wandavision.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -245,7 +245,23 @@ h1{
     font-size: 20px;
 }
 
+.nombre-serie{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 10px;
+}
 
+.descripcion-serie{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.tiempo-serie{
+    color: #fff;
+    font-size: 15px;
+    margin-top: 10px;
+}
 
 
 /* Hasta 600px */

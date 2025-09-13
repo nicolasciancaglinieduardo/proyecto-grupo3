@@ -9,7 +9,7 @@
 body{
     background-image: 
     linear-gradient(to top right, rgba(0,0,0,100), rgba(0,0,0,0)),
-    url(img/los%20vengadores%20body.webp);
+    url(../img/los\ vengadores\ body.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -215,9 +215,19 @@ h1{
     border-radius: 8px;
 }
 
+.titulos-peliculas{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+
 .div-sugerencias{
     display: flex;
     margin-bottom: -10px;
+    margin-top: 45px;
 }
 
 
