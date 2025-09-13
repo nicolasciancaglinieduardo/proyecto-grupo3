@@ -26,11 +26,11 @@ header {
     text-align: center;
 }
 
-h1{
+h1 {
     color: var(--color-celeste);
 }
 
-h2{
+h2 {
     margin: 0 0 10px 0;
     color: var(--color-celeste);
 }
@@ -167,26 +167,32 @@ footer p {
 
 
 @media (max-width: 600px) {
-  .footer-row {
-    flex-direction: column;
-    text-align: center;
-  }
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
 
-    .footer-links{
+    .footer-links {
         width: 100%;
         margin-bottom: 30px;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-  .footer-links {
-    width: 50%;
-  }
+    .footer-links {
+        width: 50%;
+    }
 }
 
 
 @media (min-width: 901px) {
-  .footer-links {
-    width: 25%;
-  }
+    .footer-links {
+        width: 25%;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
 }
