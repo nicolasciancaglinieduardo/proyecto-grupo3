@@ -11,15 +11,21 @@
         <img src="./WhatsApp Image 2025-09-01 at 20.34.44 (1)-Photoroom.png" alt="ADA-logo" class="logo">
 
         <div class="login-box">
-            <h1 class="title">Escribir correo para continuar</h1>
+            <h1 class="title">Introduce tu correo para empezar</h1>
             <p class="subtitle">Es necesario iniciar sesión en Ada+ con tu cuenta de MyAda. En caso de no tener una, recibirás indicaciones para crearla.</p>
 
-            <form>
-                <div class="input-group">
-    <input type="email" name="correo" id="correo" required>
-    <label for="correo">Correo electrónico</label></div>
-    <button class="btn" type="submit">Continuar</button>
-        </form>
+        <form action="error404.html" method="get">
+    <div class="input-group">
+<input type="email" name="correo" id="correo"
+    required 
+    oninvalid="this.setCustomValidity('Por favor, ingresa un correo válido')"
+    oninput="this.setCustomValidity('')">
+
+    <label for="correo">Correo electrónico</label>
+    </div>
+    <button type="submit" class="btn">Continuar</button>
+</form>
+
 
         
             <hr>
@@ -29,8 +35,8 @@
                 MyAda te permite iniciar sesión fácilmente en los servicios y experiencias de la Familia de Compañías Walt Ada, como Ada+, ESPN, Walt Ada World y muchos más.
             </p>
     <div class="suscripcion">
-    <p class="texto-suscripcion"><strong>¿Quieres obtener más beneficios?</strong><span>Suscríbete ahora y obten Ada+ Plus</span></p>
-    <a href="/" class="btn-suscribirse">Suscribirse</a>
+    <p class="texto-suscripcion"><strong>¿Quieres obtener más beneficios? </strong><span>    -Suscríbete ahora y obten Ada+ Plus</span></p>
+    <a href="suscripcion.html" class="btn-suscribirse">Suscribirse</a>
 </div>
         </div>
     </div>
