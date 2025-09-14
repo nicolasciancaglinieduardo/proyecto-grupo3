@@ -4,11 +4,12 @@
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    transition: all 0.3s ease-in-out;
 }
 
 
-
 body {
+    display: flex;
     margin: 0;
     height: 100vh; 
     display: flex;
@@ -42,6 +43,16 @@ body {
     width: 285px;
     max-width: 80%;
     margin-bottom: 40px;
+    animation: logo-bounce 1s ease-in-out;
+}
+
+@keyframes logo-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 .login-box {
@@ -49,12 +60,24 @@ body {
     justify-content: flex-start;
     background-color: #fff;
     color: #000;
-    padding: 30px;
-    border-radius: 1.25rem;
+    padding: 40px;
+    border-radius: 2.2rem;
     width: 450px;
     max-width: 90%;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),   
+    -5px -5px 10px rgba(62, 2, 110, 0.993);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1s forwards;
 }
+
+@keyframes fade-in {
+    to {
+    opacity: 1;
+    transform: translateY(0);
+    }
+}
+
 
 .login-box h2 {
     font-size: 1.4rem;
@@ -90,7 +113,7 @@ body {
     position: absolute;
     left: 12px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-60%);
     color: #aaa;
     pointer-events: none;
     transition: all 0.2s ease-in-out;
@@ -104,26 +127,43 @@ body {
 }
 
 
-button {
-color: white;
-    border: 1px solid #d885ff;
-    background-color: #5682E8;
-    width: 300px;
-    font-size: 1rem;
-    border-radius: 6px;
-    padding: 10px;
-    margin: 18px 10;
-    text-decoration: none;
-    text-align: center;
+.btn {
     display: inline-block;
-    transition: all 0.3s ease;
+    padding: 10px 90px;
+    background: #4a6cf7;   
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
 
-button:hover {
-    background-color: rgb(88, 138, 255);
-    border: 1px solid rgb(163, 191, 255);
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2)
 }
 
+input[type="email"]:valid {
+    border-color: #4CAF50; 
+}
+
+
+input[type="email"]:invalid {
+    border-color: #f44336;
+}
+
+
+input[type="email"]:focus {
+    outline: none; 
+    border-color: #5d5dff; 
+    box-shadow: 0 0 0 3px rgba(93, 93, 255, 0.3); 
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background-color: #0d4dad;
+    color: #fff;
+}
 
 .suscripcion {
     margin-top: 20px;
@@ -151,14 +191,17 @@ button:hover {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease-in-out; 
 }
 
 .btn-suscribirse:hover {
-    background-color: #0d66c2; 
+    transform: scale(1.05); 
 }
 
-
+.suscripcion -link:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
 
 .footer-text {
     margin-top: 18px;
@@ -193,3 +236,11 @@ button:hover {
 .back-btn:hover {
     background-color: #ddd;
 }
+
+
+a:focus {
+  outline: 2px solid #5d5dff; 
+  outline-offset: 2px;
+}
+
+
