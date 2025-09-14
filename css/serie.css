@@ -40,7 +40,10 @@ header{
     padding: 25px;
     
 }
-
+.logo-espn {
+    height: 28px;
+    width: 100px;
+}
 .logo-ada{
     height: 100%;
     height: 100px;
