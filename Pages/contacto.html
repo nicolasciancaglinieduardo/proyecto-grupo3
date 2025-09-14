@@ -31,15 +31,20 @@
         <div class="card-form">
             <form>
                 <label for="name">Nombre completo:</label>
-                <input type="text" id="name" name="name" required placeholder="Nombre">
+                <input type="text" id="name" name="name" required placeholder="Nombre"
+                    pattern="^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]{2,40}$" title="Solo letras y espacios. Mínimo 2 caracteres.">
+
 
                 <label for="email">Correo electrónico:</label>
                 <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com"
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                     title="Ingrese un correo electrónico válido (ejemplo@correo.com)">
 
+
                 <label for="phone">Número de teléfono:</label>
-                <input type="tel" id="phone" name="phone" required placeholder="Ej: 3812345678" pattern="[0-9]{7,15}">
+                <input type="tel" id="phone" name="phone" required placeholder="Ej: 3812345678" pattern="[0-9]{7,15}"
+                    pattern="[0-9]{7,15}" minlength="7" maxlength="15"
+                    title="Ingrese solo números, entre 7 y 15 dígitos.">
 
 
                 <label for="message">Mensaje:</label>
