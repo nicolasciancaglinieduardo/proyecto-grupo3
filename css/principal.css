@@ -16,8 +16,6 @@ header {
     left: 0;
     width: 100%;
     z-index:1000;
-
-
 }
 .nav-div{
     display: flex;
@@ -28,11 +26,6 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
     top: 0;
     left: 0;
-<<<<<<< HEAD
-    padding: 0 10px;
-    
-=======
->>>>>>> 3be6549 (cambios en lineas)
 }
 
 .nav-ul{
