@@ -20,11 +20,19 @@ body {
     font-style: normal;
     font-variation-settings:"wdth" 106.4;
     font-family: "Montserrat", sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+
 }
 
 .container-footer {
     max-width: 1200px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .footer {
@@ -89,6 +97,13 @@ footer p {
     border-radius: 50%;
     color: var(--color-blanco);
     transition: all .5s ease;
+}
+
+.social-link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .social-link a:hover {
