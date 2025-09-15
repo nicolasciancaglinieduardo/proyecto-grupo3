@@ -255,8 +255,35 @@ h1{
 
 
 
-/* Hasta 600px */
+
 @media (max-width: 600px) {
+
+    .nav-div {
+        padding: 6px 10px;
+    }
+
+    .logo-ada {
+        width: 90px;
+    }
+
+    .nav-ul {
+        gap: 10px;
+    }
+
+    .nav-ul li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-espn {
+        height: 18px;
+    }
+
+    .img-nav-avatar {
+        width: 32px;
+        height: 32px;
+    }
+}
     .nav-ul {
     gap: 20px;
     padding: 10px;
@@ -325,10 +352,10 @@ h1{
 
 
 
-/* Hasta 1024px*/
+
 @media (max-width: 1024px) {
     .movies-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+    grid-template-columns: repeat(2, 1fr); 
     }
 
     .img-theadvengers {
