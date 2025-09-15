@@ -131,6 +131,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
     padding: 30px 20px;
 }
 
@@ -461,9 +462,10 @@ h2 {
         padding: 20px;
     }
 
+
     .banner-texto {
         max-width: 60%;
-        padding-top: 100px;
+        padding-top: 120px;
     }
 
     .banner-texto h1 {
@@ -474,29 +476,54 @@ h2 {
         font-size: 18px;
     }
 
-    .image-content {
-        gap: 30px;
+    .nav-ul {
+        gap: 25px;
     }
 
-    .card img {
-        height: 260px;
+    .logo-ada {
+        height: 80px;
     }
 }
 
-@media (max-width: 992px) {
-    .banner {
+
+@media (max-width: 768px) {
+    .nav-div {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .logo-ada {
+        height: 70px;
+        margin-top: 0;
+    }
+
+    .banner {
+        height: 60vh;
+        padding: 20px;
+        margin-top: 100px;
     }
 
     .banner-texto {
         max-width: 100%;
         padding-top: 60px;
+        text-align: center;
     }
 
     .banner-texto h1 {
         font-size: 32px;
+    }
+
+    .banner-texto p {
+        font-size: 16px;
     }
 
     .sports-content {
@@ -509,52 +536,53 @@ h2 {
         gap: 20px;
     }
 
-    .card {
-        max-width: 200px;
+    .categories .card {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .banner {
+        height: 50vh;
+        padding: 10px;
+    }
+
+    .banner-texto h1 {
+        font-size: 24px;
+    }
+
+    .banner-texto p {
+        font-size: 14px;
+    }
+
+    .logo-ada {
+        height: 55px;
+    }
+
+    .img-nav-avatar {
+        height: 35px;
+        margin: 5px;
+    }
+
+    .nav-ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .card img {
-        height: 220px;
+        height: 200px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
     }
 }
 
 @media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .banner {
-        padding: 20px;
-        margin-top: 50px;
-    }
-
-    .banner-texto {
-        padding-top: 40px;
-        text-align: center;
-    }
-
-    .banner-texto h1 {
-        font-size: 26px;
-    }
-
-    .banner-texto p {
-        font-size: 16px;
-    }
-
-    .recomendaciones {
-        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    }
-
-    .categorias {
-        flex-wrap: wrap;
-    }
-
-    .categorias .card {
-        width: 160px;
+    .logos .card {
+        width: 150px;
         height: 120px;
-    }
-
-    .image-content .logo {
-        height: 60px;
     }
 }
