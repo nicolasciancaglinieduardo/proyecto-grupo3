@@ -395,7 +395,74 @@ h2 {
     transform: scale(1.05);
 }
 
-@media (max-width: 1024px) {
+
+
+@media (max-width: 390px) {
+    .nav-div {
+        padding: 6px 10px;
+    }
+
+    .logo-ada {
+        width: 80px; /* más chico en móvil */
+    }
+
+    .nav-ul {
+        gap: 8px; /* menos separación */
+    }
+
+    .nav-ul li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .img-nav-avatar {
+        width: 30px;
+        height: 30px;
+    }
+
+    @media (max-width: 390px) {
+    .logos {
+        gap: 10px;
+    }
+
+    .card img {
+        height: 40px;
+    }
+
+    .nav-div {
+        padding: 6px 10px;
+    }
+
+    .logo-ada {
+        width: 90px; 
+    }
+
+    .nav-ul {
+        gap: 10px;
+    }
+
+    .nav-ul li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .logo-espn {
+        height: 18px;
+    }
+
+    .img-nav-avatar {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .banner {
+        height: 60vh;
+        padding: 20px;
+    }
+
+
     .banner-texto {
         max-width: 60%;
         padding-top: 120px;
